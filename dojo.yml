@@ -7,6 +7,8 @@ type: topic
 award:
   belt: Thunder
 
+comparator: 2000
+
 modules:
   - id: buffer-overflow
     icon: Pikachu
