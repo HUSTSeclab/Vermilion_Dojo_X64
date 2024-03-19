@@ -14,10 +14,10 @@ void init()
 void print_desc()
 {
 	printf("###\n");
-	printf("### Welcome to ./buffer-overflow-level1.0!\n");
+	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
+	printf("### Or just skip and try other pokemons.\n");
+	printf("### Have fun :)\n");
 	printf("###\n");
-	printf("\n");
-	printf("This challenge will directly overflow a local variable to bypass some conditions\n");
 }
 
 void read_flag()

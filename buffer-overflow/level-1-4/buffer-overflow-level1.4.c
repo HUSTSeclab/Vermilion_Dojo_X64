@@ -16,12 +16,11 @@ void init()
 void print_desc()
 {
 	printf("###\n");
-	printf("### Welcome to ./buffer-overflow-level1.4!\n");
+	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
+	printf("### Or just skip and try other pokemons.\n");
+	printf("### Have fun :)\n");
 	printf("###\n");
-	printf("\n");
-	printf("This challenge will demo a simple data-only attack by overwriting a local boolean variable\n");
 }
-
 void read_flag()
 {
 	char flag[100];

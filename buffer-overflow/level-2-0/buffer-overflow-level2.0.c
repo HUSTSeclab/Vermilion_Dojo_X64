@@ -141,10 +141,10 @@ void menu()
 void print_desc()
 {
 	printf("###\n");
-	printf("### Welcome to ./buffer-overflow-level2.0!\n");
+	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
+	printf("### Or just skip and try other pokemons.\n");
+	printf("### Have fun :)\n");
 	printf("###\n");
-	printf("\n");
-	printf("This challenge will directly overflow a data variable on heap to read flag\n");
 }
 
 int main()

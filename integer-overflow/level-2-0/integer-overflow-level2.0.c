@@ -6,10 +6,10 @@
 void print_desc()
 {
 	printf("###\n");
-	printf("### Welcome to ./integer-overflow-level2.0!\n");
+	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
+	printf("### Or just skip and try other pokemons.\n");
+	printf("### Have fun :)\n");
 	printf("###\n");
-	printf("\n");
-	printf("This challenge will use integer overflow to bypass some checks, and print the flag\n");
 }
 
 unsigned long read_hex_long()
