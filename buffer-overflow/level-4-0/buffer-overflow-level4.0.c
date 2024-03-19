@@ -1,8 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
-#include <errno.h>
-#include "util.h"
 
 void init()
 {
@@ -14,11 +11,12 @@ void init()
 void print_desc()
 {
 	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
+	printf("### Welcome to ./buffer-overflow-level4.0!\n");
 	printf("###\n");
+	printf("\n");
+	printf("This challenge will directly overflow the return address to read flag\n");
 }
+
 void read_flag()
 {
 	char flag[100];
@@ -26,7 +24,7 @@ void read_flag()
 
 	file = fopen("/flag", "r");
 	if (file == NULL) {
-		printf("[-] cannot open\n");
+		printf("无法打开文件\n");
 		exit(-1);
 	}
 
@@ -39,22 +37,18 @@ void read_flag()
 
 int main()
 {
-	bool match = false;
-	char buffer[8];
-	int result;
+	short a = 0x1234;
+	long unused_int = 0xdeadbeef;
+	char buffer[0x13];
+        
+        init();
 
-	printf("3 + 5 = ?\n");
+	print_desc();
+
+        puts("Give me your input");
+	
 	scanf("%s", buffer); // vulnerable scanf
-	result = atoi(buffer);
-
-	if (match) {
-		read_flag();
-	} else {
-		printf("The provided input is incorrect\n");
-	}
-
-	return 0;
-
+        
 	puts("Bye bye~");
 
 	return 0;
