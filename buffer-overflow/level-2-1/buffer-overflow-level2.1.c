@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
-
+#include "util.h"
 typedef struct _notebook {
 	char name[0x10];
 	size_t index;

@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <openssl/md5.h>
-
+#include "util.h"
 
 void init()
 {

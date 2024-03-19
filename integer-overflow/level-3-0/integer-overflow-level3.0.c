@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include "util.h"
 
 void print_desc()
 {

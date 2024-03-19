@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
+#include "util.h"
 
 #define FLAG_LEN 0x40
 

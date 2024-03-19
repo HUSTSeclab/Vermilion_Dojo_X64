@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
+#include "util.h"
 
 #define CONTENT_SIZE 0x20
 #define FILENAME_SIZE 0x10
