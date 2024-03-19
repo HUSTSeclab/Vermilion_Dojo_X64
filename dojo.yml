@@ -6,3 +6,16 @@ type: topic
 
 award:
   belt: Thunder
+
+modules:
+  - id: buffer-overflow
+    icon: Pikachu
+
+  - id: integer-overflow
+    icon: Pikachu
+
+  - id: other-vulnerabilities
+    icon: Pikachu
+  
+  - id: use-after-free
+    icon: Pikachu
