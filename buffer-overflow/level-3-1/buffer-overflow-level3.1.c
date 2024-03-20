@@ -11,16 +11,6 @@ void init()
 	setvbuf(stderr, 0, 2, 0);
 }
 
-void print_desc()
-{
-	print_image("Porygon", "image.txt");
-	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
-	printf("###\n");
-}
-
 void read_flag()
 {
 	char flag[100];
@@ -47,16 +37,20 @@ void input_message(char * name)
 	puts("Say something to me:");
 	scanf("%256s*c", buf);
 	printf("Copy that, %s\n", buf);
-	puts("Bye bye~");
+	print_exit();
 }
 
 int main()
 {
 	char name[0x20];
-        print_desc();
+        
+	print_desc();
+
 	puts("Give me your name:");
 	read(0, name, 0x20);
         input_message(name);
+
+	print_exit();
 
 	return 0;
 }

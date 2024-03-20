@@ -51,8 +51,12 @@ void read_flag()
 
 int main(){
 	init();
-	print_image("Parasect", "image.txt");
+	
+	print_desc();
 	fmt_func();
+
+	print_exit();
+
 	return 0;
 }
 

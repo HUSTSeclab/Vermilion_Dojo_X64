@@ -13,16 +13,6 @@ void init()
 	setvbuf(stderr, 0, 2, 0);
 }
 
-void print_desc()
-{
-	print_image("Lanturn", "image.txt");
-	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
-	printf("###\n");
-}
-
 void read_flag()
 {
 	char flag[100];
@@ -53,7 +43,7 @@ void input_message(char * data)
 
 	MD5(text, sizeof(text), hash);
 	
-	puts("Bye bye~");
+	print_exit();
 
 	if (strncmp((const char *)hash, 
 	            "\x7c\xcc\x02\xc4\x02\x19\xc5\xc6\x52\x2a\x37\x74\x99\xa9\x60\xec",
@@ -64,10 +54,12 @@ void input_message(char * data)
 int main()
 {
 	char data[0x100] = {0};
-        print_desc();
+        
+	print_desc();
 	puts("Give me your input:");
 	read(0, data, 0x100);
         input_message(data);
 
+	print_exit();
 	return 0;
 }

@@ -150,7 +150,7 @@ int main()
         int choice, flag = 1;
 
         init();
-        print_image("Dugtrio", "image.txt");
+	print_desc();
 	read_flag();
 
         while (flag) {
@@ -179,7 +179,7 @@ int main()
                 }
         }
         
-        puts("Bye bye~");
+        print_exit();
 
 	return 0;
 }

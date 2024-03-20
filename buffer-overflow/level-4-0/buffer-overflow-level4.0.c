@@ -8,16 +8,6 @@ void init()
 	setvbuf(stderr, 0, 2, 0);
 }
 
-void print_desc()
-{
-	print_image("Krabby", "image.txt");
-	printf("###\n");
-	printf("### Welcome to ./buffer-overflow-level4.0!\n");
-	printf("###\n");
-	printf("\n");
-	printf("This challenge will directly overflow the return address to read flag\n");
-}
-
 void read_flag()
 {
 	char flag[100];
@@ -50,7 +40,7 @@ int main()
 	
 	scanf("%s", buffer); // vulnerable scanf
         
-	puts("Bye bye~");
+	print_exit();
 
 	return 0;
 }

@@ -4,16 +4,6 @@
 #include <stdlib.h>
 #include "util.h"
 
-void print_desc()
-{
-	print_image("Ninetales", "image.txt");
-	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
-	printf("###\n");
-}
-
 unsigned short read_short()
 {
 	char buf[0x6];
@@ -54,6 +44,7 @@ int main()
 {
 	unsigned char s;
 	unsigned short i;
+	
 	print_desc();
 
         puts("Give me your input");
@@ -72,5 +63,8 @@ int main()
 	} else {
 	 	printf("Please leverage the underlying integer overflow to bypass the condition\n");
 	}
+
+	print_exit();
+
 	return 0;
 }

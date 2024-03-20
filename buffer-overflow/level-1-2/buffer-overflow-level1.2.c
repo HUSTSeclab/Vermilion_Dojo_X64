@@ -12,16 +12,6 @@ void init()
 	setvbuf(stderr, 0, 2, 0);
 }
 
-void print_desc()
-{
-	print_image("Raichu", "image.txt");
-	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
-	printf("###\n");
-}
-
 void read_flag(char *filename)
 {
 	char flag[100];
@@ -57,7 +47,7 @@ int main()
         
         read_flag(filename);
 
-	puts("Bye bye~");
+	print_exit();
 
 	return 0;
 }

@@ -3,16 +3,6 @@
 #include <stdlib.h>
 #include "util.h"
 
-void print_desc()
-{
-	print_image("Jigglypuff", "image.txt");
-	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
-	printf("###\n");
-}
-
 unsigned long read_hex_long()
 {
 	char buf[0x10];
@@ -63,6 +53,8 @@ int main()
 		print_flag();
 	else
 	 	printf("Please leverage the underlying integer overflow to bypass the condition\n");
+
+	print_exit();
 	
 	return 0;
 }

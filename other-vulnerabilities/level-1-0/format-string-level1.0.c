@@ -13,16 +13,6 @@ void init()
 	setvbuf(stderr, 0, 2, 0);
 }
 
-void print_desc()
-{
-	print_image("Paras", "image.txt");
-	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
-	printf("###\n");
-}
-
 void input_message() 
 {
 	char buf[FMT_LEN];
@@ -63,8 +53,11 @@ void magic()
 int main()
 {
         init();
+
 	print_desc();
 	magic();
+
+	print_exit();
 
 	return 0;
 }

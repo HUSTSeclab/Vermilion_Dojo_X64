@@ -11,15 +11,6 @@ void init()
 	setvbuf(stderr, 0, 2, 0);
 }
 
-void print_desc()
-{
-	print_image("Jolteon", "image.txt");
-	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
-	printf("###\n");
-}
 void read_flag()
 {
 	char flag[100];
@@ -44,6 +35,8 @@ int main()
 	char buffer[8];
 	int result;
 
+	print_desc();
+
 	printf("3 + 5 = ?\n");
 	scanf("%s", buffer); // vulnerable scanf
 	result = atoi(buffer);
@@ -56,7 +49,7 @@ int main()
 
 	return 0;
 
-	puts("Bye bye~");
+	print_exit();
 
 	return 0;
 }

@@ -138,16 +138,6 @@ void menu()
         puts("Choice >> ");
 }
 
-void print_desc()
-{
-	print_image("Electabuzz", "image.txt");
-	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
-	printf("###\n");
-}
-
 int main()
 {
         int choice, flag = 1;
@@ -184,7 +174,7 @@ int main()
                 }
         }
         
-        puts("Bye bye~");
+        print_exit();
 
 	return 0;
 }
