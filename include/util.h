@@ -10,7 +10,6 @@
 #define LOG_RED   	"\x1B[31m"
 #define LOG_BLUE   	"\x1B[34m"
 #define LOG_CYAN   	"\x1B[36m"
-#define LOG_BGYELLOW 	"\x1b[43m"
 
 extern void print_exit();
 extern void print_desc();

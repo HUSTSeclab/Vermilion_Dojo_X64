@@ -167,7 +167,7 @@ void print_exit()
         printf("\n### ");
 	print_time();
         printf(" 战斗记录:");
-        print_color(name, LOG_RED, LOG_BGYELLOW);
+        print_color(name, LOG_RED, NULL);
         printf("获胜\n");
 	printf("### 努力提升自己的等级后，再来挑战吧！\n");
         fflush(stdout);
