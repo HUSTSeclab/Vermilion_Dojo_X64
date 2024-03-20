@@ -16,6 +16,7 @@ void init()
 
 void print_desc()
 {
+	print_image("Voltorb", "image.txt");
 	printf("###\n");
 	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
 	printf("### Or just skip and try other pokemons.\n");

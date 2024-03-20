@@ -216,6 +216,7 @@ void menu()
 
 void print_desc()
 {
+	print_image("Magneton", "image.txt");
 	printf("###\n");
 	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
 	printf("### Or just skip and try other pokemons.\n");
@@ -229,8 +230,6 @@ int main()
 
         init();
 	print_desc();
-        puts("dangdang777 has a magic notebook."); 
-	puts("how can you use it to get flag?");
 
         while (flag) {
                 menu();

@@ -10,6 +10,7 @@ void init()
 
 void print_desc()
 {
+	print_image("Krabby", "image.txt");
 	printf("###\n");
 	printf("### Welcome to ./buffer-overflow-level4.0!\n");
 	printf("###\n");

@@ -130,8 +130,7 @@ int main()
         int choice, flag = 1;
 
         init();
-        puts("dangdang777 has a magic notebook."); 
-	puts("how can you use it to get flag?");
+        print_image("Diglett", "image.txt");
 
         while (flag) {
                 menu();

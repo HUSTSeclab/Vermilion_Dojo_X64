@@ -140,6 +140,7 @@ void menu()
 
 void print_desc()
 {
+	print_image("Electabuzz", "image.txt");
 	printf("###\n");
 	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
 	printf("### Or just skip and try other pokemons.\n");
@@ -153,7 +154,6 @@ int main()
 
         init();
 	print_desc();
-        puts("We have a magic notebook for you:");
 
         while (flag) {
                 menu();

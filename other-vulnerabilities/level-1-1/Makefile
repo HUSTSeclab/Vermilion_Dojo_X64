@@ -1,4 +1,4 @@
-TARGET = fmt-str-level1.1
+TARGET = format-string-level1.1
 CC     = gcc
 CFLAGS = -Wall  -Wextra -z lazy -fno-stack-protector -Wno-format-security -Wno-stringop-overflow
 INCLUDE = -I ../../include ../../include/util.c
