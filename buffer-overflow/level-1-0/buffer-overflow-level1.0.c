@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "util.h"
 
+
 void init()
 {
 	setvbuf(stdin, 0, 2, 0);
@@ -9,15 +10,20 @@ void init()
 	setvbuf(stderr, 0, 2, 0);
 }
 
-void print_desc()
-{
-	print_image("Magnemite", "image.txt");
-	printf("###\n");
-	printf("### If you feel hard to beat this pokemon, please read and study the description.\n");
-	printf("### Or just skip and try other pokemons.\n");
-	printf("### Have fun :)\n");
-	printf("###\n");
-}
+// void print_desc()
+// {
+// 	print_image("小磁怪", "image.txt");
+// 	printf("###\n");
+// 	// printf("### Pokémons, please read and study the description.\n");
+// 	// 在正式挑战宝可梦之前，请仔细阅读并学习描述中的战斗技巧
+// 	// 如果感到吃力，请先尝试战胜其他低等级的宝可梦
+// 	// printf("### Or just skip and try other lower level Pokémons.\n");
+// 	// printf("### Have fun :)\n");
+// 	printf("### 在正式挑战%s之前，请仔细阅读并学习描述中的战斗技巧\n", "小磁怪");
+// 	printf("### 如果感到吃力，请先尝试战胜其他低等级的宝可梦\n");
+// 	printf("### 祝你好运 :)\n");
+// 	printf("###\n");
+// }
 
 void read_flag()
 {
@@ -54,7 +60,7 @@ int main()
                 read_flag();
         }
 
-	puts("Bye bye~");
+	print_exit();
 
 	return 0;
 }
