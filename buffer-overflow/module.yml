@@ -1,4 +1,4 @@
-name: Buffer Overflow
+name: 缓冲区溢出
 challenges:
   - id: level-1-0
     name: Level 1.0
