@@ -11,13 +11,13 @@ comparator: 2000
 
 modules:
   - id: buffer-overflow
-    icon: Pikachu
+    icon: Jolteon
 
   - id: integer-overflow
-    icon: Pikachu
+    icon: Ninetales
 
   - id: other-vulnerabilities
-    icon: Pikachu
+    icon: Paras
   
   - id: use-after-free
-    icon: Pikachu
+    icon: Diglett
