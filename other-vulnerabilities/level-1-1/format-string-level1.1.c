@@ -10,22 +10,6 @@ int init(){
 	return 0;	
 }
 
-int fmt_func(){
-	char buf[0x100];
-	int flag=0;
- 	puts("Please modify the flag value by fmt  vulnerability to get a shell");
-	while(1){
-		puts("input:");
-		read(0,buf,0x100);
-		printf(buf);
-		if(flag == 100 ){
-			read_flag();	
-		}
-	}
-	return 0;
-	
-}
-
 void read_flag()
 {
 	char *p;
@@ -47,6 +31,22 @@ void read_flag()
 	printf("%s", flag);
 
 	fclose(fp);
+}
+
+int fmt_func(){
+	char buf[0x100];
+	int flag=0;
+ 	puts("Please modify the flag value by fmt  vulnerability to get a shell");
+	while(1){
+		puts("input:");
+		read(0,buf,0x100);
+		printf(buf);
+		if(flag == 100 ){
+			read_flag();	
+		}
+	}
+	return 0;
+	
 }
 
 int main(){
